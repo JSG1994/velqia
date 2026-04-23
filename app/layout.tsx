@@ -9,6 +9,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://modoanden.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  manifest: '/manifest.webmanifest',
   title: {
     default: 'ModoAndén — Escapadas y viajes sin coche',
     template: '%s | ModoAndén',
@@ -19,11 +20,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/brand/Logo.png', type: 'image/png' },
+    ],
+    shortcut: ['/favicon.ico'],
+    apple: [{ url: '/brand/Logo.png', type: 'image/png' }],
+  },
   openGraph: {
     title: 'ModoAndén — Escapadas y viajes sin coche',
     description:
       'Escapadas fáciles de organizar sin coche. Destinos accesibles en tren o bus desde las principales ciudades de España.',
     url: '/',
+    images: [
+      {
+        url: '/brand/Logo.png',
+        width: 1024,
+        height: 768,
+        alt: 'ModoAndén - Escapadas y viajes sin coche',
+      },
+    ],
     siteName: 'ModoAndén',
     locale: 'es_ES',
     type: 'website',
@@ -33,6 +50,7 @@ export const metadata: Metadata = {
     title: 'ModoAndén — Escapadas y viajes sin coche',
     description:
       'Escapadas fáciles de organizar sin coche. Destinos accesibles en tren o bus desde las principales ciudades de España.',
+    images: ['/brand/Logo.png'],
   },
   robots: {
     index: true,
