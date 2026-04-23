@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-brand-light text-sm font-medium px-4 py-1.5 rounded-full mb-6">
           <MapPin size={14} className="text-brand-accent" />
-          Escapadas sin coche desde Espana
+          Escapadas sin coche en España
         </div>
         <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
           Escapadas y viajes sin coche
