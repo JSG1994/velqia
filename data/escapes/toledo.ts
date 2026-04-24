@@ -233,6 +233,283 @@ export const toledoEscape: Escape = {
       'La pulsera turística incluye siete monumentos y el ahorro aparece de verdad cuando haces varias entradas. Para una noche, no siempre compensa. Para dos, muchas veces sí.',
   },
 
+  realExperience: {
+    title: 'Lo que hace especial a Toledo',
+    intro:
+      'Toledo funciona por densidad histórica, no por tamaño. En pocas calles concentra capas romana, visigoda, islámica, judía, cristiana e imperial, con el Tajo, las murallas y el perfil monumental como hilo conductor de toda la visita.',
+    officialReading:
+      'La lectura institucional presenta Toledo como ciudad Patrimonio de la Humanidad y gran síntesis de más de dos milenios de historia, con un casco histórico muy amplio y una oferta monumental excepcional.',
+    realTravelerReading:
+      'El viajero suele disfrutar más cuando combina un gran interior, una ruta legible por la Judería o el entorno catedralicio y un cierre panorámico o gastronómico. Intentar verlo todo en una sola jornada rebaja mucho la experiencia.',
+    honestVerdict:
+      'Toledo merece muchísimo la pena, pero exige selección. Un día vale para una primera toma de contacto; una noche suele ser la fórmula óptima; dos noches solo compensan si pesan gastronomía, hotel, exposiciones o planes complementarios; tres noches no deben venderse como estándar.',
+  },
+
+  detailedItinerary: {
+    title: 'Cómo organizar Toledo sin correr',
+    intro:
+      'Ritmo base recomendado: elegir 1 gran icono, 2 o 3 interiores secundarios como máximo y dejar espacio para caminar, comer y entender la topografía.',
+    oneDayFromMadrid: {
+      title: 'Si vas en el día',
+      plan:
+        'Salir temprano desde Madrid en tren, entrar al casco por el eje Zocodover-catedral, visitar un gran interior, bajar después hacia Judería con un segundo espacio elegido y rematar con comida y paseo exterior o mirador. Si quieres optimizar presupuesto, usar franjas gratuitas de museo o la Pulsera Turística en monumentos incluidos.',
+      warning:
+        'No intentes meter en el mismo día catedral, alcázar, dos sinagogas, museo, mirador, comida larga y compras. Toledo parece compacto, pero el desnivel, las colas y la fatiga visual penalizan mucho.',
+    },
+    oneNight: {
+      title: 'Si duermes 1 noche',
+      plan:
+        'Día 1 para el núcleo monumental principal y una primera cena con calma. Día 2 para Judería, museo o mirador y salida sin prisa. Es la fórmula más equilibrada para una primera escapada cultural.',
+      whyItWorks:
+        'Añade una noche y una mañana útil sin inflar el número de entradas. Mejora mucho la experiencia respecto al viaje en el día porque elimina el reloj del regreso.',
+    },
+    twoNights: {
+      title: 'Si duermes 2 noches',
+      plan:
+        'Usar el segundo día para una comida larga, una ruta temática, una exposición temporal, un buen restaurante o un plan complementario como Puy du Fou. Mantener la tercera mañana solo como cierre suave.',
+      whyItWorks:
+        'La segunda noche compensa cuando el viaje no es solo ver monumentos, sino disfrutar de gastronomía, hotel, temporada o un ritmo pausado.',
+    },
+    threeNights: {
+      title: 'Si duermes 3 noches',
+      plan:
+        'Solo tiene sentido si el hotel, el descanso, la alta gastronomía, el VIII Centenario, Puy du Fou o un enfoque temático justifican convertir Toledo en base y no en simple escapada express.',
+      warning:
+        'No vender 3 noches como estándar. Para una primera visita generalista suele sobrar, salvo que el descanso o la agenda especial pesen tanto como el patrimonio.',
+    },
+  },
+
+  foodAndRestaurants: {
+    title: 'Dónde comer en Toledo',
+    intro:
+      'La comida suma valor real cuando marca el ritmo de la escapada y ayuda a leer la ciudad por zonas, no cuando se convierte en una lista de locales sin criterio.',
+    foodIdentity:
+      'Producto y cocina con influencia de Montes de Toledo y La Mancha: carcamusas, perdiz a la toledana, cocido de tres vuelcos, cochifrito, vinos, aceites, azafrán y mazapán de Toledo con IGP.',
+    areas: [
+      {
+        name: 'Zocodover y centro comercial histórico',
+        description:
+          'Zona táctica para la primera comida de una escapada corta. Buena para tapeo, carcamusas y una pausa rápida entre llegadas y monumentos centrales.',
+      },
+      {
+        name: 'Judería, Santo Tomé y Tránsito',
+        description:
+          'La mejor zona para sentarse con más calma entre museos y patrimonio. Encaja bien en viajes de una o dos noches.',
+      },
+      {
+        name: 'Cigarrales, San Martín y valle',
+        description:
+          'Área para comidas o cenas con vistas. Encaja sobre todo si duermes en la ciudad o quieres que el paisaje forme parte de la experiencia.',
+      },
+      {
+        name: 'Bisagra, Recaredo y borde exterior del casco',
+        description:
+          'Zona menos romántica pero más práctica para llegadas en coche, hoteles con parking o comidas previas a salir de Toledo.',
+      },
+    ],
+    recommendedRestaurants: [
+      {
+        name: 'Iván Cerdeño - Cigarral del Ángel',
+        type: 'Alta cocina de memoria y entorno',
+        priceFeeling: 'alto',
+        whyItFits:
+          'Convierte Toledo en destino gastronómico y no solo patrimonial. Tiene sentido cuando la cena es uno de los motivos del viaje.',
+        caution:
+          'No es una elección táctica para una escapada rápida. Requiere reserva y tiempo.',
+      },
+      {
+        name: 'La Cábala',
+        type: 'Cocina contemporánea con menús degustación',
+        priceFeeling: 'medio-alto',
+        whyItFits:
+          'Muy buen encaje para una cena trabajada en una escapada de una o dos noches sin entrar en el formato más solemne de la alta cocina de destino.',
+        caution:
+          'Conviene reservar; no encaja bien si el día ya viene muy cargado de monumentos.',
+      },
+      {
+        name: 'Restaurante del Parador de Toledo',
+        type: 'Cocina regional con valor panorámico',
+        priceFeeling: 'medio-alto',
+        whyItFits:
+          'La vista suma tanto como el plato. Funciona muy bien para una comida o cena escénica.',
+        caution:
+          'La localización no es la más cómoda si te mueves solo a pie por el casco.',
+      },
+      {
+        name: 'Mercado de San Agustín',
+        type: 'Mercado gastronómico y raciones',
+        priceFeeling: 'medio',
+        whyItFits:
+          'Resuelve bien grupos mixtos o viajeros cansados que quieren flexibilidad y formato para compartir.',
+        caution:
+          'No debe presentarse como experiencia toledana clásica de mantel; funciona mejor como solución versátil.',
+      },
+      {
+        name: 'Bu Terraza',
+        type: 'Terraza panorámica y comida ligera',
+        priceFeeling: 'medio',
+        whyItFits:
+          'Suma mucho al atardecer y en noches templadas, cuando el paisaje importa casi tanto como el plato.',
+        caution:
+          'En temporada alta conviene reservar y asumir que aquí el contexto pesa mucho.',
+      },
+    ],
+    editorialTip:
+      'Presentar este bloque como ayuda de decisión: dónde conviene sentarse según zona, ritmo y noches. Evitar el enfoque de guía infinita.',
+  },
+
+  seasonalPlans: {
+    title: 'Planes de temporada en Toledo',
+    intro:
+      'Toledo cambia bastante con la liturgia, el calendario cultural y el calor. En 2026, el VIII Centenario de la catedral es el gran factor diferencial.',
+    plans: [
+      {
+        name: 'Semana Santa patrimonial',
+        when: 'Marzo-abril, según calendario móvil',
+        whyItFits:
+          'Refuerza la lectura histórica y litúrgica del casco y da valor real a la noche',
+        idealFor: 'Viajeros de patrimonio religioso o cultura procesional',
+        caution: 'Afecta movilidad, descanso y horarios de visita',
+      },
+      {
+        name: 'Corpus Christi',
+        when: 'Finales de mayo o primer tercio de junio, según programa oficial 2026',
+        whyItFits:
+          'Es la gran semana festiva de la ciudad y transforma el centro histórico',
+        idealFor: 'Quien quiera ver Toledo ceremonial y muy vivo',
+        caution:
+          'La programación definitiva debe revisarse en fuente oficial porque la información pública consultada mostraba aún material 2025 y una fecha errónea',
+      },
+      {
+        name: 'Exposición Primada del VIII Centenario',
+        when: 'Del 25 de mayo al 14 de octubre de 2026',
+        whyItFits:
+          'Aporta un motivo potente para dormir una o dos noches y recentra la visita en la catedral',
+        idealFor: 'Viajeros culturales y repetidores',
+        caution: 'Puede alterar recorridos internos y elevar demanda en alojamiento',
+      },
+      {
+        name: 'Puy du Fou + ciudad',
+        when: 'Primavera a otoño, según apertura del parque',
+        whyItFits:
+          'Da sentido a una segunda noche y mezcla patrimonio urbano con espectáculo histórico',
+        idealFor: 'Familias, grupos y quien ya conoce el casco',
+        caution:
+          'No es un plan peatonal desde el centro; exige coche, taxi o bus específico',
+      },
+      {
+        name: 'Patrimonio menos visible y aperturas especiales',
+        when: 'Según agenda del Consorcio y del Ayuntamiento',
+        whyItFits:
+          'Permite descubrir conventos, restauraciones y rutas fuera del circuito más obvio',
+        idealFor: 'Repetidores y viajeros temáticos',
+        caution: 'Muy dependiente de aforo y programación puntual',
+      },
+    ],
+  },
+
+  hotelDecisionGuide: {
+    title: 'Dónde dormir según el tipo de viaje',
+    intro:
+      'En Toledo importa tanto la categoría como la logística. La decisión real es elegir entre centro, descanso, parking, spa, vistas y facilidad de acceso.',
+    options: [
+      {
+        hotel: 'Parador de Toledo',
+        bestFor: 'Escapadas románticas, coche, vistas, dos noches con ritmo pausado',
+        realWhy: 'El skyline de Toledo forma parte de la estancia y no solo de la visita',
+        caution:
+          'Menos práctico para entrar y salir andando del casco varias veces',
+      },
+      {
+        hotel: 'Hotel San Juan de los Reyes',
+        bestFor: 'Primera noche en Toledo con todo a pie',
+        realWhy:
+          'Combina localización muy buena en la Judería con un formato de hotel cómodo y claro',
+        caution:
+          'Parking limitado y acceso en coche menos simple que en hoteles exteriores',
+      },
+      {
+        hotel: 'Hotel Pintor El Greco',
+        bestFor: 'Viajeros culturales que quieren dormir dentro del casco con encanto',
+        realWhy:
+          'Ubicación excelente para Judería, museo y paseo histórico',
+        caution:
+          'No es la mejor opción si priorizas piscina, vistas o hotel como destino',
+      },
+      {
+        hotel: 'Eugenia de Montijo, Autograph Collection',
+        bestFor: 'Escapada premium muy céntrica',
+        realWhy: 'Suma palacio histórico, centro total y componente spa',
+        caution:
+          'Precio alto y acceso más delicado por la densidad del casco',
+      },
+      {
+        hotel: 'Eurostars Palacio Buenavista',
+        bestFor: 'Viajes de descanso, spa y coche o taxi',
+        realWhy:
+          'Permite vivir Toledo con base más relajada y hotelera',
+        caution:
+          'Pierdes parte de la inmersión inmediata de dormir dentro del casco histórico',
+      },
+    ],
+    verdict:
+      'Para la mayoría de usuarios: casco o Judería si solo duermes una noche y quieres hacerlo casi todo a pie; cigarrales o hotel exterior si pasas dos noches, vas en coche o el descanso pesa más que la centralidad.',
+  },
+
+  honestWarnings: {
+    title: 'Lo que conviene saber antes de ir',
+    items: [
+      {
+        title: 'Toledo desgasta más de lo que parece',
+        text:
+          'El desnivel, el empedrado y la fatiga visual hacen que un plan sobrecargado salga peor de lo esperado.',
+      },
+      {
+        title: 'La accesibilidad no es uniforme',
+        text:
+          'Hay recursos concretos adaptados, pero el casco histórico no permite dar por hecha una experiencia barrera-cero. Conviene verificar monumento por monumento.',
+      },
+      {
+        title: 'Los horarios cambian por culto, temporada y eventos',
+        text:
+          'No fijes una agenda cerrada sin revisar cada web oficial el mismo día o la víspera.',
+      },
+      {
+        title: 'Dormir en el centro no siempre implica descansar mejor',
+        text:
+          'La centralidad reduce caminatas, pero puede penalizar con ruido, acceso y precio en semanas fuertes.',
+      },
+      {
+        title: 'Puy du Fou no es una prolongación peatonal del casco',
+        text:
+          'Si lo incluyes, necesita logística propia y casi siempre empuja hacia dos noches.',
+      },
+    ],
+  },
+
+  seoBlocks: {
+    whatToSee: {
+      title: 'Qué ver en Toledo en una escapada corta',
+      text:
+        'Lo más sensato en una escapada corta es combinar un gran icono monumental, un tramo de Judería y un cierre panorámico o de museo ligero, en lugar de intentar verlo todo.',
+    },
+    howToArrive: {
+      title: 'Cómo llegar a Toledo sin coche',
+      text:
+        'Desde Madrid, el tren Avant suele ser la opción más eficiente para una escapada corta, mientras que el autobús es una alternativa válida cuando pesan más el horario o el precio que el tiempo de viaje.',
+    },
+    whereToEat: {
+      title: 'Dónde comer en Toledo',
+      text:
+        'Conviene elegir zona según el momento del viaje: centro para una comida táctica, Judería para comer con más calma y cigarrales o valle para una mesa con vistas.',
+    },
+    isItWorthSleeping: {
+      title: '¿Merece la pena dormir en Toledo?',
+      text:
+        'Sí: una noche mejora mucho la experiencia porque elimina el reloj del regreso, permite cenar bien y añade una mañana útil. Dos noches solo compensan si pesan gastronomía, hotel o planes de temporada.',
+    },
+  },
+
   editorial: {
     accommodationIntro:
       'En Toledo la ubicación pesa mucho, pero no siempre de la misma manera. En una noche manda el centro puro. En dos noches ya puedes equilibrar ubicación y confort. En tres, tiene sentido dormir por vistas o por experiencia.',
