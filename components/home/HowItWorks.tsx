@@ -23,7 +23,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-slate-50 py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <SectionHeading title="Cómo funciona" subtitle="Sin publicidad ni listas de patrocinadores" />
+        <SectionHeading title="Cómo funciona" />
         <div className="grid sm:grid-cols-3 gap-8 mt-10">
           {steps.map((step, i) => (
             <div key={i} className="flex flex-col items-center text-center">

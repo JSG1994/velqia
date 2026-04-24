@@ -4,7 +4,6 @@ const values = [
   'Solo destinos alcanzables en tren o bus desde las principales ciudades',
   'Opinion editorial real: te decimos para quien encaja y para quien no',
   'Formato por noches: 1, 2 o 3 noches con planes diferentes',
-  'Sin publicidad ni enlaces de afiliados que distorsionen el consejo',
   'Actualizamos los precios y horarios antes de publicar',
 ]
 
