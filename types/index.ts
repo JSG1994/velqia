@@ -86,18 +86,19 @@ export interface RecommendedRestaurant {
   type: string
   priceFeeling: string
   whyItFits: string
-  bestFor: string
+  bestFor?: string
   caution: string
 }
 
 export interface FoodAndRestaurants {
   title: string
   intro: string
-  foodIdentity: string
+  howToThinkAboutIt?: string
+  foodIdentity?: string
   areas: RestaurantArea[]
   recommendedRestaurants: RecommendedRestaurant[]
-  budgetAdvice: string
-  editorialTip: string
+  budgetAdvice?: string
+  editorialTip?: string
 }
 
 export interface SeasonalPlan {
@@ -144,10 +145,18 @@ export interface SeoBlockItem {
 }
 
 export interface EscapeSeoBlocks {
-  whatToSee: SeoBlockItem
-  howToArrive: SeoBlockItem
-  whereToEat: SeoBlockItem
-  isItWorthSleeping: SeoBlockItem
+  whatToSee?: SeoBlockItem
+  howToArrive?: SeoBlockItem
+  whereToEat?: SeoBlockItem
+  isItWorthSleeping?: SeoBlockItem
+  oneDay?: SeoBlockItem
+  weekend?: SeoBlockItem
+  sleepingThere?: SeoBlockItem
+}
+
+export interface DeepEssence {
+  title: string
+  text: string
 }
 
 export interface Escape {
@@ -196,6 +205,7 @@ export interface Escape {
     quickWeekendAdvice: { title: string; text: string }
     closing: { title: string; text: string }
   }
+  deepEssence?: DeepEssence
   realExperience?: RealExperience
   detailedItinerary?: DetailedItinerary
   foodAndRestaurants?: FoodAndRestaurants

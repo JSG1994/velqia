@@ -1,5 +1,5 @@
 import type { Escape } from '@/types'
-import { Compass, UtensilsCrossed, CalendarClock, Bed, AlertTriangle, Search } from 'lucide-react'
+import { Compass, UtensilsCrossed, CalendarClock, Bed, AlertTriangle, Search, Layers } from 'lucide-react'
 
 interface Props {
   escape: Escape
@@ -7,6 +7,7 @@ interface Props {
 
 export default function ExtendedContentSection({ escape }: Props) {
   const {
+    deepEssence,
     realExperience,
     detailedItinerary,
     foodAndRestaurants,
@@ -19,12 +20,21 @@ export default function ExtendedContentSection({ escape }: Props) {
   const hasText = (value?: string) => Boolean(value && value.trim().length > 0)
 
   const seoItems = seoBlocks
-    ? [seoBlocks.whatToSee, seoBlocks.howToArrive, seoBlocks.whereToEat, seoBlocks.isItWorthSleeping].filter(
-        block => hasText(block.title) || hasText(block.text),
+    ? [
+        seoBlocks.whatToSee,
+        seoBlocks.howToArrive,
+        seoBlocks.oneDay,
+        seoBlocks.weekend,
+        seoBlocks.whereToEat,
+        seoBlocks.isItWorthSleeping,
+        seoBlocks.sleepingThere,
+      ].filter((block): block is NonNullable<typeof block> =>
+        block !== undefined && (hasText(block.title) || hasText(block.text)),
       )
     : []
 
   const hasExtendedContent =
+    !!deepEssence ||
     !!realExperience ||
     !!detailedItinerary ||
     !!foodAndRestaurants ||
@@ -37,6 +47,18 @@ export default function ExtendedContentSection({ escape }: Props) {
 
   return (
     <div className="space-y-12">
+      {deepEssence && (
+        <section>
+          <h2 className="text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <Layers size={20} className="text-brand-accent" />
+            {deepEssence.title}
+          </h2>
+          {deepEssence.text.split('\n\n').map((p, i) => (
+            <p key={i} className="text-slate-600 leading-relaxed mb-3">{p}</p>
+          ))}
+        </section>
+      )}
+
       {realExperience && (
         <section>
           <h2 className="text-xl font-bold text-slate-900 mb-3">{realExperience.title}</h2>
@@ -100,7 +122,12 @@ export default function ExtendedContentSection({ escape }: Props) {
             {foodAndRestaurants.title}
           </h2>
           <p className="text-slate-600 leading-relaxed mb-3">{foodAndRestaurants.intro}</p>
-          <p className="text-slate-600 leading-relaxed mb-4">{foodAndRestaurants.foodIdentity}</p>
+          {hasText(foodAndRestaurants.howToThinkAboutIt) && (
+            <p className="text-slate-600 leading-relaxed mb-3">{foodAndRestaurants.howToThinkAboutIt}</p>
+          )}
+          {hasText(foodAndRestaurants.foodIdentity) && (
+            <p className="text-slate-600 leading-relaxed mb-4">{foodAndRestaurants.foodIdentity}</p>
+          )}
 
           {foodAndRestaurants.areas.length > 0 && (
             <div className="grid gap-3 md:grid-cols-3 mb-5">
@@ -129,10 +156,16 @@ export default function ExtendedContentSection({ escape }: Props) {
             </div>
           )}
 
-          <div className="bg-brand-accent/5 border border-brand-accent/20 rounded-lg p-4">
-            <p className="text-sm text-slate-700 mb-2">{foodAndRestaurants.budgetAdvice}</p>
-            <p className="text-sm text-slate-700">{foodAndRestaurants.editorialTip}</p>
-          </div>
+          {(hasText(foodAndRestaurants.budgetAdvice) || hasText(foodAndRestaurants.editorialTip)) && (
+            <div className="bg-brand-accent/5 border border-brand-accent/20 rounded-lg p-4">
+              {hasText(foodAndRestaurants.budgetAdvice) && (
+                <p className="text-sm text-slate-700 mb-2">{foodAndRestaurants.budgetAdvice}</p>
+              )}
+              {hasText(foodAndRestaurants.editorialTip) && (
+                <p className="text-sm text-slate-700">{foodAndRestaurants.editorialTip}</p>
+              )}
+            </div>
+          )}
         </section>
       )}
 
